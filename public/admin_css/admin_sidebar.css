@@ -1,0 +1,222 @@
+/* In Medium screen or above -> .active means collapse and < 768px .active means un-coolapse item or element */
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #192231;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* Body content -> sidebar and body */
+
+
+/* upper bar */
+
+.navbar {
+    border-bottom: 1px solid seashell;
+}
+
+.top_navbar {
+    background-color: #192231;
+    width: 100%;
+    transition: .1s ease-out;
+}
+
+#content.active .top_navbar {
+    width: calc(100% - 250px);
+    transition: .1s ease-in;
+}
+
+.profile .nav-item:nth-child(2) p {
+    font-size: unset !important;
+    line-height: unset !important;
+    margin-bottom: unset !important;
+}
+
+.profile_icon {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 5.3%;
+}
+
+.profile_icon_img img {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* sidebar */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar.active {
+    margin-left: 0px;
+}
+
+
+/* sidebar profile picture */
+
+.sidebar_profile {
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sidebar_profile .img_container {
+    height: 120px;
+    width: 120px;
+    clip-path: circle();
+    margin: auto;
+}
+
+.sidebar_profile h4 {
+    font-family: 'Poly', serif;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.sidebar_profile img {
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    margin-left: -250px;
+    width: 250px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1111;
+}
+
+#content.active {
+    width: calc(100% - 250px);
+    /* background-color: red; */
+}
+
+#content {
+    /* width: calc(100% - 250px); */
+    width: 100%;
+    padding: 0px 10px 5px 10px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#sidebar {
+    background: #131c29;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #131c29;
+}
+
+#sidebar ul.components {
+    padding: 2px 0;
+    border-bottom: 1px solid #131c29;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #131c29;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #131c29;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #131c29;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #content {
+        width: 100%;
+        padding: 0px 10px 5px 0px;
+    }
+    #content.active {
+        /* width: calc(100% - 250px); */
+        width: 100%;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    .top_navbar {
+        width: 100%;
+    }
+    #content.active .top_navbar {
+        /* width: calc(100% - 250px); */
+        width: 100%;
+    }
+    #content.active .profile {
+        display: none !important;
+        transition: .1s linear
+    }
+}

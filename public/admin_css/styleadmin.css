@@ -1,0 +1,135 @@
+@import "../../global_import.css";
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Rokkitt', serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #192231;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+h3, h4, h5 {
+    font-family: 'Poly', serif;
+}
+
+/* Body Content */
+
+.page_heading {
+    margin-top: 6rem;
+    color: seashell;
+    padding: 5px 0;
+}
+
+/* admin name */
+
+.admin_welcome {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 5px 0;
+}
+
+.admin_welcome .h1 {
+    font-family: 'Poly', serif;
+}
+
+/* 4 block  */
+
+.progress_bar .row {
+    margin-top: 2.1rem;
+    background-color: #131c29;
+}
+
+.col-sm-6 {
+    margin-top: .5rem;
+    padding: 20px 15px;
+}
+
+.user_block {
+    height: 140px;
+    position: relative;
+    background-color: #192231;
+}
+
+.user_block .user_logo {
+    position: absolute;
+    width: 25%;
+    height: 54%;
+    text-align: center;
+    line-height: 73px;
+    font-size: 28px;
+    top: -20%;
+    left: 5%;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.user_count {
+    width: 100%;
+}
+
+.user_count p {
+    font: 300 30px san-serif;
+}
+
+.user_count span {
+    font: 400 27px san-serif;
+    color: blanchedalmond;
+}
+
+/* Website summary */
+
+.website_summary {
+    position: relative;
+    padding-bottom: 30px;
+    background-color: #131c29;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+/* table top div logo */
+
+.table_heading {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: -34px;
+    left: 26px;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    h1, .h1 {
+        font-size: 25px !important;
+    }
+    .website_summary {
+        overflow-x: scroll;
+    }
+    .website_summary::-webkit-scrollbar {
+        height: 3px;
+        background: transparent;
+    }
+    .table_heading {
+        top: 0px;
+        left: 26px;
+    }
+}

@@ -1,0 +1,424 @@
+@import "global_import.css";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+header a {
+    color: white;
+}
+
+/* Button's Start */
+
+/* btn Hover and after */
+
+.btn_red, .btn_red:link, .btn_red:visited {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+    border-radius: 100px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poly', serif;
+    padding: 7px 25px;
+}
+
+.btn_red:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 20px rgb(110, 110, 110);
+}
+
+.btn_red:active, .btn_red:focus {
+    outline: none;
+    transform: translateY(1px);
+    box-shadow: 0px 8px 10px #000;
+}
+
+.btn_red::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+    transition: all 0.5s;
+}
+
+.btn_red:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn_red img {
+    vertical-align: middle;
+    height: 80%;
+    width: 15%;
+}
+
+/* Upper menu Start */
+
+.primary-navbar {
+    text-align: right;
+}
+
+.header_social {
+    border-right: 1px solid orangered;
+    padding-right: 15px;
+    vertical-align: middle;
+}
+
+.header_social a, .access a {
+    text-decoration: none;
+    color: #3486cc;
+    font-size: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+    /* color: orangered; */
+}
+
+.login_button, .reg_button {
+    font-size: 18px;
+}
+
+/* Upper menu End */
+
+.header_outer_area {
+    background-color: rgba(0, 0, 0, .4);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header_outer_area::before {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 57px solid rgba(0, 0, 0, .4);
+    border-left: 58px solid transparent;
+    margin-left: -58px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.header_outer_area::after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border-top: 57px solid rgba(0, 0, 0, .4);
+    border-right: 58px solid transparent;
+    margin-right: -58px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header_img_area {
+    position: relative;
+}
+
+.header_img_area .bg-pos::before {
+    content: '';
+    background-image: url(../images/menu_bar_leftred.png);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 58px;
+    position: absolute;
+    left: 0%;
+    bottom: -38px;
+    z-index: -1;
+}
+
+.bg-pos::after {
+    content: '';
+    background-image: url(../images/menu_bar_rightred.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    width: 55%;
+    height: 62px;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+    bottom: -38px;
+}
+
+.brnd-pos {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Media Queries for Max-Width 1200px */
+
+@media (max-width: 1200px) {
+    .leader .card-img {
+        /* width: 30%; */
+        margin: auto;
+    }
+    .card-header .card-img {
+        display: block !important;
+    }
+}
+
+/* Media Queries for Max-Width 991px */
+
+@media (max-width: 991px) {
+    header {
+        text-align: center;
+        margin: unset;
+        width: 100% !important;
+        position: relative !important;
+        background: none;
+    }
+    .header_outer_area {
+        background: none;
+        padding-bottom: unset;
+        margin: unset;
+        width: 100% !important;
+    }
+    .header_outer_area::before, .header_outer_area::after {
+        display: none;
+    }
+    .navbar-brand {
+        margin: auto;
+    }
+    .bg-pos::after, .bg-pos::before {
+        display: none;
+    }
+    /* Navbar Slide from left Style Code */
+    .navbar {
+        width: 100%;
+    }
+    .navbar-collapse {
+        position: absolute;
+        right: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        transition: all .3s ease;
+        display: block;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+    .navbar-collapse ul {
+        height: auto;
+    }
+    .navbar-collapse.collapsing {
+        height: auto !important;
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .navbar-collapse.show {
+        right: 0%;
+    }
+}
+
+/* Hamburger */
+
+.navigation a, .navigation span {
+    font-size: 1.5rem;
+}
+
+.navigation__checkbox {
+    display: none;
+}
+
+.navigation__button {
+    background-color: #fff;
+    height: 4rem;
+    width: 4rem;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    border-radius: 50%;
+    z-index: 2000;
+    text-align: center;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.navigation__background {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+    background-image: radial-gradient(#7ed56f, #28b485);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.51, 0.91, 0.54, 0.89);
+    backface-visibility: hidden;
+}
+
+.navigation__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+    opacity: 0;
+    width: 0;
+    transition: all 0.8s;
+}
+
+.navigation__list {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.navigation__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation__item {
+    margin: 1rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+    display: inline-block;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+    transition: all 0.5s;
+}
+
+.navigation__link:link span, .navigation__link:visited span {
+    margin-right: 1.5rem;
+}
+
+.navigation__link:hover, .navigation__link:active {
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked~.navigation__nav {
+    opacity: 1;
+    width: 100%;
+}
+
+.navigation__checkbox:checked~.navigation__background {
+    transform: scale(80);
+}
+
+.navigation__icon {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+    width: 2rem;
+    height: 2px;
+    background-color: #333;
+    display: inline-block;
+}
+
+.navigation__icon::before, .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.navigation__icon::before {
+    top: -0.6rem;
+}
+
+.navigation__icon::after {
+    top: 0.6rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+    top: -.8rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+    top: .8rem;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+    background-color: transparent;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+/* User profile bottom menu */
+
+.user_profile {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #009578;
+}
+
+.nav__icon {
+    font-size: 18px;
+}
+
+@media (min-width: 320px){
+    
+}

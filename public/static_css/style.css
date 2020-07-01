@@ -1,0 +1,562 @@
+@import "global_import.css";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rokkitt', serif;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+.container-fluid, .row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ************************************* HomePage Carousel ****************************************** */
+
+/* Carousel Inner */
+
+.carousel ol li.active {
+    background-color: #3486cc !important;
+}
+
+.carousel ol li:hover {
+    background-color: blue;
+}
+
+.jumbotron {
+    min-height: 100vh;
+}
+
+.cimg {
+    width: 100%;
+    height: 100%;
+}
+
+.cimg .img-fluid1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+#img-1 {
+    background-image: url('../images/cod1.jpg');
+}
+
+#img-2 {
+    background-image: url('../images/ff2.jpg');
+}
+
+#img-3 {
+    background-image: url('../images/fortnite.jpg');
+}
+
+#img-4 {
+    background-image: url('../images/freefire.jpg');
+}
+
+.cimg .img-fluid {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.images {
+    position: relative;
+}
+
+.overdiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+    top: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    left: unset !important;
+    right: unset !important;
+}
+
+.carousel-caption h3 {
+    font-family: 'Audiowide', cursive;
+    ;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.pbtn .s1 {
+    border-right: 1px solid #fefefe;
+    padding-right: 6px;
+}
+
+/* Second Section */
+
+/* Section-Second */
+
+.second-section {
+    background: url('../images/sec-2-back-img.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.second-section {
+    height: 100%;
+    width: 100%;
+}
+
+.second-section h4 {
+    color: white;
+}
+
+.second-section hr {
+    width: 25%;
+    background: black;
+    margin: auto;
+}
+
+/* Tabs / third Section */
+
+.third-section {
+    padding: 100px 0 !important;
+}
+
+/* Cards Style */
+
+.heading-secondary {
+    font-weight: 900;
+    transform: scaleY(1.1);
+    background: linear-gradient(to right bottom, #ffb900 20%, #ff7730 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* CARD STYLE END */
+
+h1 {
+    margin: auto;
+}
+
+/* Fourth-section / parallax */
+
+.fourth-section {
+    min-height: 80vh;
+    position: relative;
+    color: white;
+    background-color: black;
+}
+
+.fourth-section .left-content {
+    color: #969696;
+    margin-top: 30%;
+    text-align: left;
+}
+
+.fourth-section .left-content h5 {
+    padding: 0 0 20px 0;
+}
+
+.fourth-section .left-content p {
+    padding: 20px 10px;
+    width: 90%;
+}
+
+.fourth-section .right-img {
+    overflow: hidden !important;
+}
+
+.fourth-section .right-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.fourth-section .right-img:hover img {
+    transform: scale(.9);
+    transition: all .3s ease;
+}
+
+/* Leader Boards */
+
+.leader {
+    min-height: 80vh;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.leader .col-md-4 .leader-card-1, .leader .col-md-4 .leader-card-2, .leader .col-md-4 .leader-card-3 {
+    width: 75%;
+}
+
+.leader .leader-card-1.card {
+    border: 2px solid #7b7c7e !important;
+    min-height: 80%;
+}
+
+.leader .leader-card-2.card {
+    border: 2px solid #eaa40f !important;
+}
+
+.leader .leader-card-3.card {
+    border: 2px solid #b9785b !important;
+}
+
+.card-header {
+    background: #f2f2f2 !important;
+    border: unset;
+    padding: 60px 20px;
+}
+
+.leader .card-img {
+    width: 30%;
+    margin-left: auto;
+}
+
+#leader-hr {
+    width: 50%;
+    position: relative;
+}
+
+#leader-hr::before {
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    left: 0;
+    top: -5px;
+    background: rgb(177, 176, 176);
+}
+
+#leader-hr::after {
+    content: "";
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    right: 0;
+    top: -5px;
+    background: rgb(177, 176, 176);
+}
+
+.leader-hr-1 {
+    margin: 50px auto;
+}
+
+.leader-hr-2 {
+    margin: 60px auto;
+}
+
+.leader-hr-3 {
+    margin: 40px auto;
+}
+
+.leader .card-text {
+    display: inline-block;
+    width: 50%;
+    padding-top: 0%;
+    vertical-align: bottom;
+}
+
+.leader-rank, .leader-rank-1, .leader-rank-3 {
+    width: 100%;
+    height: 39px;
+    font-size: 17px;
+    text-transform: uppercase;
+    background-position-x: 48.5% !important;
+    color: #fff;
+    padding-top: 13px;
+}
+
+.leader-rank {
+    background: url(../images/leaderboard-rank-bg2.png) center top no-repeat;
+}
+
+.leader-rank-1 {
+    background: url(../images/leaderboard-rank-bg.png) center top no-repeat;
+}
+
+.leader-rank-3 {
+    background: url(../images/leaderboard-rank-bg3.png) center top no-repeat;
+}
+
+.leader .card-img-propic {
+    top: -24%;
+    left: 50%;
+    width: 104px;
+    height: 104px;
+    padding: 12px 6px;
+    border-radius: 100%;
+    background: white;
+    transform: translateX(-50%);
+}
+
+/* Fifth Section */
+
+.fifth-section {
+    min-height: 80vh;
+    background: url(../images/homepage-zombies-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(204, 40, 0, 0.6);
+    background-blend-mode: color;
+    padding: 70px 0;
+}
+
+.fifth-section h5 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.fifth-section .btn {
+    background: #fe0000;
+}
+
+.fifth-section .left-content-img {
+    background: url(../images/center-soldier-cod.png);
+    min-height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+}
+
+.fifth-section .btn {
+    padding: 10px 40px;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+.fifth-section .right-content {
+    padding-top: 14%;
+}
+
+/***************************** End of HomePage Carousel *************************** */
+
+/* Slider Media Query */
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    h2 {
+        font-size: 26px !important;
+    }
+    h3 {
+        font-size: 24px !important;
+    }
+    p {
+        font-size: 18px !important;
+    }
+    .nav {
+        justify-content: center !important;
+    }
+    .third-section .tab-content .col-1-of-3 {
+        margin-bottom: 20px;
+    }
+    .fourth-section h3, .fourth-section p {
+        text-align: justify !important;
+    }
+    .leader .card-img {
+        width: 100%;
+        margin: auto;
+        display: block !important;
+    }
+    .card-header {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .leader .card-text {
+        width: 100%;
+    }
+    .leader .col-md-4 {
+        margin-bottom: 20px;
+    }
+    .fifth-section h5 {
+        text-align: center;
+    }
+    .fifth-section .display-4 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .jumbotron {
+        height: auto;
+    }
+    .cimg {
+        width: 100%;
+        height: 100%;
+    }
+    .cimg .img-fluid1 {
+        min-height: 100vh;
+    }
+    .jumbotron .carousel-caption {
+        left: unset;
+        right: unset;
+    }
+    .jumbotron .btn_red, .second-section .btn_red {
+        margin-top: 5%;
+        padding: 0px 20px 8px 20px;
+        font-size: 20px;
+    }
+    .btn_red span img {
+        vertical-align: bottom;
+    }
+    .heading-secondary {
+        font-size: 40px;
+    }
+}
+
+/* Card demo */
+
+.third-section .container {
+    position: relative;
+}
+
+.third-section .container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.third-section .container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.third-section .container .card:nth-child(1) .icon {
+    background: #e07768;
+}
+
+.third-section .container .card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.third-section .container .card:nth-child(3) .icon {
+    background: #4aada9;
+}
+
+.third-section .container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.third-section i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.third-section .container .card .face {
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.third-section .container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.third-section .container .card:hover .face.face1 {
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.third-section .container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.third-section .container .card .face.face1 .content img {
+
+    min-height: 200px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.third-section .container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.third-section .container .card .face.face1 .content i {
+    max-width: 100px;
+}
+
+.third-section .container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.third-section .container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.third-section .container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.third-section .container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}
+
+.third-section .container a {
+    text-decoration: none;
+    color: #414141;
+}

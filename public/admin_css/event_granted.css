@@ -1,0 +1,265 @@
+@import "../../global_import.css";
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Rokkitt', serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #192231;
+}
+
+h1, h2 {
+    font-family: 'Audiowide', cursive;
+}
+
+h3, h4, h5 {
+    font-family: 'Poly', serif;
+}
+
+/* Body Content */
+
+.page_heading {
+    margin-top: 6rem;
+    color: seashell;
+}
+
+/* Table */
+
+/* Website summary */
+
+.event_summary {
+    position: relative;
+    padding-bottom: 30px;
+    background-color: #131c29;
+    margin-top: 3.5rem;
+    width: 100%;
+}
+
+/* Tabs */
+
+.tabs {
+    margin: auto;
+    overflow: hidden;
+}
+
+.contents {
+    padding: 20px 50px;
+    min-height: 200px;
+}
+
+.tabs>.diamond-cut {
+    text-align: center;
+    font-weight: 500;
+    padding: 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.tabs>.diamond-cut>li {
+    display: inline-block;
+    padding: 0.6em 0;
+    position: relative;
+    width: 33%;
+    margin: 0 0 0 -4px;
+    background: #192231;
+}
+
+.tabs>.diamond-cut>li::before, .tabs>.diamond-cut>li.ui-state-active.ui-state-hover::before, .tabs>.diamond-cut>li.ui-state-active.ui-state-focus::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+    top: 50%;
+    bottom: 0px;
+    left: 5px;
+    right: 5px;
+    border-radius: calc(100px / 10px);
+}
+
+.tabs>.diamond-cut>li::before, .tabs>.diamond-cut>li::after {
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.tabs>.diamond-cut>li.ui-tabs-active::before, .tabs>.diamond-cut>li.ui-tabs-active::after, .tabs>.diamond-cut>li.ui-state-hover::before, .tabs>.diamond-cut>li.ui-state-hover::after, .tabs>.diamond-cut>li.ui-state-focus::before, .tabs>.diamond-cut>li.ui-state-focus::after {
+    opacity: 1;
+}
+
+.tabs>.diamond-cut>li::after, .tabs>.diamond-cut>li.ui-state-active.ui-state-hover::after, .tabs>.diamond-cut>li.ui-state-active.ui-state-focus::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -6px;
+    transform: rotate(45deg);
+    background: #192231;
+    box-shadow: inset 3px 3px 3px purple, inset 1px 1px 1px purple;
+}
+
+.tabs>.diamond-cut>li.ui-state-hover::before, .tabs>.diamond-cut>li.ui-state-focus::before {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tabs>.diamond-cut>li.ui-state-hover::after, .tabs>.diamond-cut>li.ui-state-focus::after {
+    box-shadow: inset 3px 3px 3px purple, inset 1px 1px 1px purple;
+}
+
+.tabs>.diamond-cut>li::before, .tabs>.diamond-cut>li.ui-state-active.ui-state-hover::before, .tabs>.diamond-cut>li.ui-state-active.ui-state-focus::before {
+    box-shadow: 0 2px 3px rgba(255, 255, 255, 0.3);
+}
+
+.tabs>.diamond-cut>li.ui-state-focus a {
+    text-decoration: underline;
+}
+
+.tabs>.diamond-cut>li:focus {
+    outline: none;
+}
+
+.tabs>.diamond-cut>li a span {
+    position: relative;
+    top: -0.5em;
+}
+
+.tabs>.diamond-cut {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+.tabs>.diamond-cut>li.ui-state-hover::before, .tabs>.diamond-cut>li.ui-state-focus::before {
+    box-shadow: none;
+}
+
+.tabs>.diamond-cut>li a {
+    color: white;
+}
+
+/* Switch Button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 34px;
+    line-height: 34px;
+    text-align: right;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch .yes {
+    color: black;
+    font-size: 15px;
+    display: none;
+    padding-left: 10px;
+    transition: .1s ease;
+}
+
+.switch .no {
+    color: black;
+    font-size: 15px;
+    display: block;
+    padding-right: 10px;
+    transition: .1s ease;
+}
+
+.switch input:checked+.slider {
+    background-color: orange;
+}
+
+.switch input:checked+.slider .yes {
+    display: block;
+    transition: .8s ease;
+    text-align: left;
+}
+
+.switch input:checked+.slider .no {
+    display: none;
+    text-align: right;
+    transition: .8s ease;
+}
+
+.switch input:focus+.slider {
+    box-shadow: 0 0 1px orange;
+}
+
+.switch input:checked+.slider::before {
+    -webkit-transform: translateX(66px);
+    -ms-transform: translateX(66px);
+    transform: translateX(66px);
+}
+
+/* table top div logo */
+
+.table_heading {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: -34px;
+    left: 26px;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    #tab1, #tab2, #tab3 {
+        overflow-x: scroll;
+    }
+    #tab1 table, #tab2 table, #tab3 table {
+        width: 100%;
+    }
+    #tab1::-webkit-scrollbar, #tab2::-webkit-scrollbar, #tab3::-webkit-scrollbar {
+        height: 3px;
+        background: #131c29;
+    }
+    .table_heading {
+        top: 0px;
+        left: 26px;
+    }
+}

@@ -1,0 +1,319 @@
+@import "global_import.css";
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+h2, h3, h4 {
+    font-family: 'Poly', serif;
+}
+
+/* Row One */
+
+/* Bgimg */
+
+.bgimgEvents {
+    background-image: url(../slider_img/freefire.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    height: 450px;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.textEvent {
+    position: absolute;
+    top: 35%;
+    text-align: center !important;
+    color: white !important;
+    width: 100%;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.nav img {
+    height: 100%;
+    width: 120px;
+}
+
+.trytabs {
+    position: absolute;
+    /*top: 70%;
+    */
+    height: 180px !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    -webkit-transform: translate(-50%, -10%);
+    -moz-transform: translate(-50%, -10%);
+    -ms-transform: translate(-50%, -10%);
+    -o-transform: translate(-50%, -10%);
+}
+
+/* Eof Row one */
+
+/* Row Two */
+.event_card_box {
+    box-shadow: 0px 0px 50px #382727;
+    padding: 10px;
+}
+
+
+.main-div {
+    position: relative;
+    height: 400px;
+    background-image: url('../images/bgimgevent1.png');
+    background-size: cover;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+}
+
+.inner-div {
+    position: absolute;
+    top: 0;
+    /* height: 30vh; */
+    width: 100%;
+    margin-top: 12%;
+    border-bottom: 2px solid lightslategray;
+}
+
+.img-box {
+    height: 190px;
+    width: 100px;
+}
+
+.img-box img {
+    height: 130px;
+    width: 100%;
+}
+
+.startTime {
+    position: absolute;
+    bottom: 2%;
+    margin-left: 5%;
+}
+
+.main-div2 {
+    position: relative;
+    background-image: url('../images/maindiv2.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+    border: 8px solid #343a40;
+}
+
+#event_card {
+    color: white;
+}
+
+.inner-div2 {
+    position: absolute;
+    top: 0;
+    /* height: 30vh; */
+    width: 100%;
+    margin-top: 13% !important;
+    border-bottom: 2px solid lightslategray;
+}
+
+.img-box2 {
+    height: 190px;
+    width: 100px;
+}
+
+.img-box2 img {
+    height: 130px;
+    width: 100%;
+}
+
+.startTime2 {
+    position: absolute;
+    bottom: 5%;
+    margin-left: 5%;
+}
+
+#fortnite-big-card, #fortnit-small-card {
+    background-image: url('../images/eventfortnite.jpg') !important;
+}
+
+#freefire-big-card, #freefire-small-card {
+    background-image: url('../images/eventfreefire2.jpg') !important;
+}
+
+#pubg-big-card, #pubg-small-card {
+    background-image: url('../images/pubg1.jpg') !important;
+}
+
+#cod-big-card, #cod-small-card {
+    background-image: url('../images/cod.jpg') !important;
+}
+
+@media only screen and (max-width:320px) {
+    .textEvent {
+        left: 0;
+        text-align: left !important;
+    }
+    .trytabs {
+        left: 0;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .nav img {
+        height: 100%;
+        width: 70px;
+    }
+    .img-box {
+        margin-left: 0 !important;
+    }
+    .img-box h3 {
+        font-size: 15px;
+    }
+    .context {
+        margin-top: 0 !important;
+    }
+    .context h1 {
+        font-size: 20px;
+    }
+    .context h4 {
+        font-size: 15px;
+    }
+    .startTime h5 {
+        font-size: 15px;
+    }
+    .inner-div2 {
+        margin-top: 0 !important;
+    }
+    .img-box2 {
+        height: 160px;
+        width: 100px;
+    }
+    .img-box2 h4 {
+        font-size: 14px;
+    }
+    .context2 {
+        margin-top: 0 !important;
+    }
+    .context2 h4 {
+        font-size: 14px;
+    }
+    .context2 h6 {
+        font-size: 14px;
+    }
+    .startTime2 {
+        bottom: 2% !important;
+    }
+    .startTime2 h6 {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:321px) and (max-width:575.98px) {
+    .textEvent {
+        left: 5%;
+        text-align: left !important;
+    }
+    .trytabs {
+        left: 5%;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .nav img {
+        height: 100%;
+        width: 75px;
+    }
+    .context {
+        margin-top: 0 !important;
+    }
+    .context h1 {
+        font-size: 20px;
+    }
+    .context h4 {
+        font-size: 15px;
+    }
+    .startTime {
+        bottom: 5%;
+    }
+    .inner-div2 {
+        margin-top: 0 !important;
+    }
+    .img-box2 h4 {
+        font-size: 18px;
+    }
+    .context2 {
+        margin-top: 0 !important;
+    }
+    .context2 h4 {
+        font-size: 18px;
+    }
+    .context2 h6 {
+        font-size: 14px;
+    }
+    .startTime2 h6 {
+        font-size: 14px !important;
+    }
+    .startTime2 {
+        bottom: 0 !important;
+    }
+}
+
+@media (min-width:576px) and (max-width:767.98px) {
+    .textEvent {
+        text-align: left !important;
+    }
+    .trytabs {
+        left: 5%;
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    .nav img {
+        height: 100%;
+        width: 80px;
+    }
+    .context h1 {
+        font-size: 30px;
+    }
+    .context h4 {
+        font-size: 20px;
+    }
+    .startTime {
+        bottom: 5% !important;
+    }
+    .context2 {
+        margin-top: 0 !important;
+    }
+    .context2 h4 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .nav img {
+        height: 100%;
+        width: 90px;
+    }
+    .startTime {
+        bottom: 5% !important;
+    }
+}
+
+/* Eof R2 */

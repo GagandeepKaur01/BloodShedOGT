@@ -1,0 +1,418 @@
+@import "../static_css/global_import.css";
+* {
+    font-family: 'Rokkitt', serif !important;
+}
+
+i {
+    font-family: 'Font Awesome 5 Free' !important;
+}
+
+main {
+    perspective: 100rem;
+}
+
+.zoom-content {
+    transform-style: preserve-3d;
+    transition: transform .6s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.active .zoom-content {
+    transform: translate3d(0, 0, -15rem);
+    -webkit-transform: translate3d(0, 0, -15rem);
+    -moz-transform: translate3d(0, 0, -15rem);
+    -ms-transform: translate3d(0, 0, -15rem);
+    -o-transform: translate3d(0, 0, -15rem);
+}
+
+
+/* Tabs- BASICS, INFO , SETTINGS */
+
+
+/* line no- 18 in html file */
+
+.inactive_tab {
+    cursor: not-allowed;
+}
+
+.active_tab {
+    cursor: pointer;
+}
+
+.tabs {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+}
+
+.nav-tabs {
+    border: none !important;
+}
+
+.nav-tabs li {
+    padding: 5px 20px 5px 20px !important;
+}
+
+.nav-tabs li a {
+    text-transform: uppercase !important;
+    color: white !important;
+}
+
+.nav-tabs li a:focus {
+    color: orangered !important;
+}
+
+.nav-tabs li a:hover {
+    text-decoration: none;
+}
+
+
+/* eof of tab links- BASICS, INFO, SETTINGS */
+
+
+/*  ------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+/* tab-content (line no- 43 in html file) */
+
+.tab-content {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .8);
+    z-index: 2;
+    margin-top: 2px;
+    position: absolute;
+    min-height: 100vh;
+}
+
+
+/* tab one--------------------------------------------- */
+
+
+/* required fields line no-50 in html file */
+
+
+/* floating label */
+
+.form-control {
+    border: none !important;
+    border-radius: none !important;
+    -webkit-border-radius: none !important;
+    -moz-border-radius: none !important;
+    -ms-border-radius: none !important;
+    -o-border-radius: none !important;
+    margin-bottom: 28px !important;
+    background: transparent !important;
+    outline: none !important;
+    border-bottom: 2px solid white !important;
+    color: white !important;
+    padding-left: 30px !important;
+    overflow: hidden;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    width: 100%;
+    height: 40px;
+}
+
+.required-fields .div {
+    position: relative;
+}
+
+.required-fields .div label {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    color: white;
+    pointer-events: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.form-input:focus,
+.floating-select:focus {
+    border-color: orangered !important;
+    box-shadow: none !important;
+}
+
+.form-input:focus~label,
+.form-input:valid~label {
+    color: orangered !important;
+    top: -16px !important;
+    left: -5px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+.floating-select:focus~label,
+.floating-select:not([value=""]):valid~label {
+    color: orangered !important;
+    top: -16px !important;
+    left: -5px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+.required-fields .div i {
+    position: absolute;
+    top: 12px !important;
+    left: 0;
+    width: 20px;
+}
+
+
+/* ------------------------eof floating label's css---------------------------------------- */
+
+
+/*  accordion's css - line no 141 in html */
+
+
+/* text-editor added in it to write the description of game event*/
+
+.accordion_container {
+    width: 83%;
+}
+
+.accordion_head {
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 0 1px 0;
+    padding: 7px 11px;
+}
+
+.accordion_body {
+    display: none;
+}
+
+.accordion_body .text-editor {
+    width: 100% !important;
+    overflow: scroll;
+}
+
+.card {
+    border-radius: unset !important;
+}
+
+
+/* -------------------------------endof accordion's css----------------------------------------- */
+
+
+/* css for uploading logo and banner classes - line no- 123 and 151 in html*/
+
+.radio_button_image_box_1.mx-auto {
+    height: 180px !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.logo-img2 .image1 {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.logo-img img {
+    height: 100% !important;
+    width: 100% !important;
+    cursor: pointer;
+    line-height: 200px;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.logo-img2 .image2 {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+.logo-img2 img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    line-height: 250px;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+
+/* line no 294 -> radio-image button for logo selection */
+
+.radio_button_images [type=radio] {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.radio_button_images [type=radio]:checked+img {
+    transform: scale(1.1);
+    filter: blur(1px);
+    transition: .3s ease;
+}
+
+.text_inside_radio_image {
+    position: absolute;
+    opacity: 0;
+    top: 120%;
+    left: 50%;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    text-align: center;
+    background: rgba(0, 0, 0, .8);
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    transition: .4s ease-out;
+}
+
+.radio_button_images [type=radio]:checked~.text_inside_radio_image {
+    top: 50%;
+    opacity: 1;
+    transition: .5s linear;
+}
+
+
+/* ending css of uploading logo and banner of event */
+
+
+/* -----------------ending tab one--------------------------------- */
+
+
+/* ---------------------Tab Second's content----------------------- */
+
+
+/* organizer's contact details line no-176 to 196 */
+
+.contact-input-field {
+    position: relative;
+}
+
+.contact-input-field label {
+    position: absolute !important;
+    top: 8px;
+    left: 40px;
+    color: white;
+    pointer-events: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.contact-input-field i {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    width: 20px;
+}
+
+.contact-input-field .contact-url .form-control:focus~label,
+.contact-input-field .contact-url .form-control:valid~label {
+    color: orangered !important;
+    top: -16px !important;
+    left: 10px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+
+/* Eof Tab2nd's content */
+
+
+/* Tab third-------------- */
+
+
+/* floating labels in required fields of setting tab-3rd tab */
+
+.settings-required-field .div {
+    position: relative;
+}
+
+.settings-required-field .div label {
+    position: absolute !important;
+    top: 8px;
+    left: 25px;
+    color: white;
+    pointer-events: none;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.settings-required-field i {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 20px;
+}
+
+.settings-required-field .form-control:valid:not(:focus)~label {
+    color: white !important;
+}
+
+.settings-required-field .form-input:focus,
+.settings-required-field .floating-select:focus {
+    border-color: orangered !important;
+    box-shadow: none !important;
+}
+
+.settings-required-field .form-input:focus~label,
+.settings-required-field .form-input:valid~label {
+    color: orangered !important;
+    top: -16px !important;
+    left: -5px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+.settings-required-field .floating-select:focus~label,
+.settings-required-field .floating-select:not([value=""]):valid~label {
+    color: orangered !important;
+    top: -16px !important;
+    left: -5px !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+}
+
+
+/* 2nd row -> prize pool button */
+
+#prize_pool_button {
+    right: 0;
+}
+
+#prize_table td input {
+    border: 1px solid white !important;
+    border-radius: unset !important;
+    margin-bottom: unset !important;
+    background: transparent !important;
+    outline: none !important;
+    color: white !important;
+    padding-left: 30px !important;
+    overflow: hidden;
+    width: 50%;
+    margin: auto;
+}
+
+
+/* for switch toggle */
+
+.settings-required-field .checkin label,
+.settings-advanced-field .Participant-limit label,
+.settings-advanced-field .Country-flag label {
+    cursor: pointer !important;
+}

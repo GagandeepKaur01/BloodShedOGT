@@ -1,0 +1,363 @@
+@import "../static_css/global_import.css";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #192231;
+    color: white;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Rokkitt', serif;
+}
+
+.col-12 {
+    padding-left: unset !important;
+    padding-right: unset !important;
+}
+
+.rat {
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(16, 21, 63, 0.8), rgba(195, 55, 100, .8)), url(https://iglnetwork.com/assets/images/profile-banner-01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.rat h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fat {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* rotate */
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.button {
+    width: 170px;
+    height: 170px;
+    border-radius: 50px;
+    background-color: #000;
+    text-align: center;
+    line-height: 47px;
+    font-size: 30px;
+    box-shadow: 10px 10px 10px #fff;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .6s;
+    z-index: 1;
+    clip-path: circle();
+}
+
+.button img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popout {
+    width: 100px;
+    height: 50px;
+    transform: scale(0.1);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.popout:hover img {
+    margin-left: -10px;
+    transition: .6s;
+}
+
+.popout img {
+    height: 50px;
+    width: 50px;
+    transition: .6s;
+}
+
+.first img {
+    transform: rotate(-18deg);
+}
+
+.second img {
+    transform: rotate(-53deg);
+}
+
+.third img {
+    transform: rotate(-90deg);
+}
+
+.fourth img {
+    transform: rotate(-127deg);
+}
+
+.fifth img {
+    transform: rotate(-164deg);
+}
+
+.spin {
+    transform: scale(.85);
+}
+
+.spin~.first {
+    transform: scale(1) rotate(18deg) translateX(-110px);
+    transition: .4s;
+}
+
+.spin~.second {
+    transform: scale(1) rotate(53deg) translateX(-110px);
+    transition: .5s;
+}
+
+.spin~.third {
+    transform: scale(1) rotate(90deg) translateX(-110px);
+    transition: .6s;
+}
+
+.spin~.fourth {
+    transform: scale(1) rotate(127deg) translateX(-110px);
+    transition: .7s;
+}
+
+.spin~.fifth {
+    transform: scale(1) rotate(164deg) translateX(-110px);
+    transition: .8s;
+}
+
+
+/* rotate */
+
+
+/* Second-section / User's Stats */
+
+.user_stats-heading {
+    color: white;
+}
+
+.sat a {
+    text-decoration: unset !important;
+}
+
+.sat a:hover {
+    color: inherit;
+}
+
+.sat .col-md-3 div {
+    background: #FF512F;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0000, #FF512F, #0000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0000, #FF512F, #0000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px;
+    text-align: center;
+}
+
+.sat .pro_name {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.pro_name h1 {
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.sat .col-md-3:nth-child(1) {
+    padding-left: unset;
+}
+
+.sat .col-md-3:nth-child(4) {
+    padding-right: unset;
+}
+
+
+/* 3rd section / Recent play */
+
+.recent_play_section {
+    padding-top: 5%;
+}
+
+.recent_play_games .col-sm-4 {
+    margin-bottom: 20px;
+}
+
+.col-4-inner {
+    border: 1px solid honeydew;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+.recent_play_games .col-4-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* My Tournament */
+
+.my_tournament {
+    padding-top: 5%;
+}
+
+.tournament_content .card {
+    width: 80%;
+    min-height: 200px;
+    /* border: 1px solid white; */
+    box-shadow: 0px 0px 10px black;
+    margin: 10px auto;
+}
+
+
+/* My team */
+
+.my_team {
+    padding-top: 5%;
+}
+
+
+/* Game ID */
+
+.game_id {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.game_id .bg-dark {
+    padding: 40px 10px;
+}
+
+.game_id_content .game_id--div {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 4%;
+    transform: skewX(-45deg);
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.game_id_content .h4 {
+    transform: skewX(45deg);
+}
+
+
+/* Camera Icon */
+
+.camera {
+    font-size: 50px;
+    color: aqua;
+    margin-top: 80%;
+    margin-left: 80%;
+}
+
+.camera1 {
+    position: absolute;
+    font-size: 50px;
+    color: aqua;
+    top: 25%;
+    /* margin-top: 25%; */
+}
+
+.earn {
+    color: red;
+}
+
+
+/* Game Bottom Logo */
+
+.game_work_logo img {
+    height: 20%;
+    width: 20%;
+}
+
+
+/* media queries */
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    /* col-12 */
+    .col-12 {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    /* main_jumbotron */
+    .rat {
+        height: 50vh;
+    }
+    .rat h1 {
+        width: 100%;
+    }
+    /* Camera Icon */
+    .rat i,
+    .fat i {
+        font-size: 20px;
+    }
+    /* User Profile */
+    .fat {
+        height: 150px;
+        width: 150px;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-position: center 15%;
+    }
+    /* User's Stats */
+    .user_stats {
+        margin-top: 0px;
+    }
+    .sat .col-md-3:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .sat .col-md-3:nth-child(1) {
+        padding-left: 15px;
+    }
+    .sat .col-md-3:nth-child(4) {
+        padding-right: 15px;
+    }
+    .sat .pro_name {
+        padding-top: unset;
+        margin-top: unset;
+    }
+}

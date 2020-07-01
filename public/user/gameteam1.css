@@ -1,0 +1,239 @@
+@import "../global_import.css";
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Rokkitt', serif;
+}
+
+body {
+    width: 100%;
+    font-family: 'Rokkitt', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Rokkitt', serif;
+}
+
+
+/* Main Jumbotron */
+
+.jumbotron_second {
+    min-height: 80vh;
+    border-radius: unset !important;
+    background: url(images/cod1.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: color;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+/* rotate */
+
+.rat {
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(16, 21, 63, 0.8), rgba(195, 55, 100, .8)), url(https://iglnetwork.com/assets/images/profile-banner-01.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+}
+
+.fat {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* rotate */
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.button {
+    width: 170px;
+    height: 170px;
+    border-radius: 50px;
+    background-color: #000;
+    text-align: center;
+    line-height: 47px;
+    font-size: 30px;
+    box-shadow: 10px 10px 10px #fff;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: .6s;
+    z-index: 1;
+    clip-path: circle();
+}
+
+.button img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.popout {
+    width: 100px;
+    height: 50px;
+    transform: scale(0.1);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.popout:hover img {
+    margin-left: -10px;
+    transition: .6s;
+}
+
+.popout img {
+    height: 50px;
+    width: 50px;
+    transition: .6s;
+}
+
+.first img {
+    transform: rotate(-18deg);
+}
+
+.second img {
+    transform: rotate(-53deg);
+}
+
+.third img {
+    transform: rotate(-90deg);
+}
+
+.fourth img {
+    transform: rotate(-127deg);
+}
+
+.fifth img {
+    transform: rotate(-164deg);
+}
+
+.spin {
+    transform: scale(.85);
+}
+
+.spin~.first {
+    transform: scale(1) rotate(18deg) translateX(-110px);
+    transition: .4s;
+}
+
+.spin~.second {
+    transform: scale(1) rotate(53deg) translateX(-110px);
+    transition: .5s;
+}
+
+.spin~.third {
+    transform: scale(1) rotate(90deg) translateX(-110px);
+    transition: .6s;
+}
+
+.spin~.fourth {
+    transform: scale(1) rotate(127deg) translateX(-110px);
+    transition: .7s;
+}
+
+.spin~.fifth {
+    transform: scale(1) rotate(164deg) translateX(-110px);
+    transition: .8s;
+}
+
+col-md-12 h1 p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.input_field {
+    border-radius: 50px;
+    min-width: 205px;
+    height: 53px
+}
+
+#aa {
+    font: 300 17px/30px 'Montserrat', sans-serif;
+    color: #646464;
+}
+
+#buton {
+    font: 300 25px/30px 'Oswald', sans-serif;
+    padding: 15px 50px;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    background-color: #3486cc;
+    text-align: center;
+    min-width: 205px;
+    margin-left: 40%;
+}
+
+#proimg {
+    z-index: 999;
+    line-height: 0;
+    font-size: 50px;
+    position: absolute;
+    top: -2px;
+    left: -700px;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.col-sm-6 {
+    margin-top: 5% !important;
+}
+
+.col-md-8 h1 {
+    border-bottom: medium;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+    .user_info_section {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+    .navbar a {
+        color: orangered;
+    }
+}

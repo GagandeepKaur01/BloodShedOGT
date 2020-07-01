@@ -1,0 +1,19 @@
+/* font-family: 'Audiowide', cursive; */
+
+@import "https://fonts.googleapis.com/css?family=Audiowide&display=swap";
+
+/* font-family: 'Jomolhari', serif; -> Login / Register */
+
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+
+/* font-family: 'ZCOOL XiaoWei', serif; -> Index main first heading */
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+/* font-family: 'Poly', serif; -> for secondary heading */
+
+@import url('https://fonts.googleapis.com/css?family=Poly&display=swap');
+
+/*font-family: 'Rokkitt', serif; -> Whole page content */
+
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');

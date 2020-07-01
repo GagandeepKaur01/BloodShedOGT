@@ -1,0 +1,115 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* right body content */
+
+.User_data {
+    position: relative;
+    padding-bottom: 30px;
+    background-color: #131c29;
+    margin-top: 3rem;
+    width: 100%;
+    /* overflow-x: scroll !important; */
+}
+
+.table_upper_heading h1 {
+    font-size: 30px;
+    padding: 5px 0;
+    font-family: 'Poly', serif;
+}
+
+caption {
+    caption-side: top;
+    border-top: 1px solid #223a41;
+    border-bottom: 1px solid #223a41;
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.table_heading {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    font-size: 22px;
+    font-weight: lighter;
+    top: -5%;
+    left: 4%;
+    color: white;
+    border-radius: 4px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+table {
+    font-size: 0.9em;
+    width: 100% !important;
+}
+
+table thead tr {
+    font-weight: bold;
+    border-top: unset !important;
+}
+
+table th,
+table td {
+    border-top: unset !important;
+    border-bottom: unset !important;
+    text-align: center;
+}
+
+.page_heading {
+    margin-top: 6rem !important;
+}
+
+.box,
+.select select {
+    border: unset !important;
+    outline: unset !important;
+    height: 40px;
+    width: 80%;
+}
+
+.search-box i {
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 50%;
+    right: 10%;
+    top: 2px;
+    position: absolute;
+}
+
+table .btn {
+    min-width: 100px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .table_heading {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        top: 0% !important;
+    }
+    .User_data {
+        position: relative;
+        padding-bottom: 30px;
+        background-color: #131c29;
+        margin-top: 3rem;
+        width: 100%;
+        overflow-x: scroll !important;
+    }
+    .User_data::-webkit-scrollbar {
+        height: 1px;
+        background: rgb(16, 65, 129);
+    }
+}

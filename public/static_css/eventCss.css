@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Rokkitt', serif;
+}
+
+h1 {font-family: 'Audiowide', cursive;}
+h2,h3,h4 {font-family: 'Poly', serif;}
+/* Body section */
+
+body {
+    position: relative;
+    background: linear-gradient(to bottom, transparent, black 60%), url(images/pubg2.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+
+/* Match Info */
+
+.match_info {
+    height: 50vh;
+    padding: 12% 0 4% 0;
+}
+
+.match_info .match_info_inner {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+
+/* first main container */
+
+.event_main_page {
+    min-height: fit-content;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.event_main_page .profile_img {
+    position: relative;
+}
+
+.profile_img {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+}
+
+.profile_img img {
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    margin-top: 4%;
+}
+
+.fa-li {
+    left: 0 !important;
+}
+
+
+/* Date / prize / teams icon */
+
+#aa {
+    color: cornsilk;
+}
+
+#aa>div {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#aa i {
+    font-size: 24px;
+}
+
+#aa h5 {
+    font-size: 20px;
+}
+
+
+
+
+/* Table */
+
+
+/* Prize Pool */
+
+.icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    /* line-height: 80px; */
+    background: #dc3545;
+    clip-path: circle(50%);
+    transform: translateX(-50%);
+}
+
+.icon i {
+    font-size: 32px;
+}
+
+.fa-calendar-alt:before, .fa-trophy:before {
+    line-height: 70px;
+}
+
+caption {
+    caption-side: unset;
+    color: cornsilk;
+    font-size: 25px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+    body {
+        padding: unset !important;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    h4 {
+        font-size: 22px !important;
+    }
+    .match_info .match_info_inner {
+        width: 100%;
+    }
+    .profile_img {
+        width: 80%;
+    }
+    .profile_img img {
+        display: block !important;
+        margin:auto !important;
+        position: unset !important;
+    }
+    .event_main_page .game_heading {
+        margin-top: 2rem;
+    }
+    .event_main_page .game_heading h1 {
+        font-size: 20px;
+    }
+    /* Table */
+    table th,
+    td {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+    .profile_img {
+        width: 70%;
+    }
+    .profile_img img {
+        position: unset !important;
+    }
+}
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 450px) {
+    caption {
+        caption-side: unset;
+        color: cornsilk;
+        font-size: 25px;
+        text-align: center;
+    }
+}
